@@ -1,0 +1,18 @@
+================================ Initial Idea ======================================
+
+Currently a simple invitation website utilizing html, css, js and possible react
+
+================================= Future implementation =======================================
+
+Future implementation would incorporate python and a more stable backend and database for confirmation recipt, Image upload
+Invitation GPS coordinates and feedback responses, with the possibility to share to person's contact number via sms
+
+================================== Phase 1 ======================================
+
+1) Planning The design and amount of pages 
+
+
+
+
+
+

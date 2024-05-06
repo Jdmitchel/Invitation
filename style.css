@@ -1,0 +1,18 @@
+.parent{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden
+}
+
+
+
+div{ 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23eccfd4%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23f0dbde%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23fa9c9d%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23fbb4b5%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23ff5757%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23ff8181%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%23d7f0fc%22 d=%22M0 0h2000v1000H0z%22%2F%3E%3Cpath d=%22M0 250c111.74-18.023 223.481-36.045 311-24 87.519 12.045 150.816 54.159 243 76s213.254 23.41 314 1c100.746-22.41 181.17-68.8 268-84 86.83-15.2 180.07.793 284 1 103.93.207 218.551-15.37 317-13 98.449 2.37 180.724 22.685 303 43l-40 750H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 500c112.98 13.54 225.96 27.08 311 40 85.04 12.92 142.14 25.217 229 12 86.86-13.217 203.479-51.95 308-53 104.521-1.05 196.944 35.585 295 28 98.056-7.585 201.746-59.388 298-60 96.254-.612 185.073 49.968 277 64 91.927 14.032 186.964-8.484 322-31l-40 500H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 750c111.965 30.464 223.93 60.928 315 54 91.07-6.928 161.244-51.246 241-76 79.756-24.754 169.095-29.942 273-2s222.377 89.015 319 78c96.623-11.015 171.399-94.12 264-98 92.601-3.88 203.029 71.463 304 92 100.971 20.537 192.486-13.731 324-48l-40 250H0Z%22 fill=%22url(%23c)%22%2F%3E%3C%2Fsvg%3E");
+}
+  
