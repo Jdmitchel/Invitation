@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Movie Date</title>
 </head>
-<body class="parent">
-    <div id="heading">
-        <h1 id="heading"> From Me To You (●'◡'●) </h1>
-    </div>
-    <section>
-        <div id="containter">
-            <div class="item">
-                <div class="ctrlb"></div>
-                <div class="ctrlb"></div>
-                <div class="letter"></div>
+<body>
+    <section class="parent">  
+        <section class="pattern">
+            <div id="heading">
+                <h1 class="headingText"> From Me To You</h1>
+                <h2 class="heading2"><b class="special">(●'◡'●)</b></h2>
             </div>
-        </div>
+
+            <div class="envlope-wrapper">
+                <div id="envelope">
+                    <div class="front flap"></div>
+                    <div class=" front pocket"></div>
+                    <div class="letter">
+                        <div class="letter-content">
+                            <h3 class="dear">[Person Name]</h3>
+                            <p class="words">I would like to know if
+                                you would be interested 
+                                in going on a movie date
+                                on Saturday 25th May.
+                            </p>
+                        </div>
+                        <div class="options">
+                            <button class="accept" onclick="accept()">Accept</button>
+                            <button class="decline" onclick="decline()">Decline</button>
+                        </div>
+
+                    </div>
+                    <div class="seal">
+                        <i class="fa fa-film"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="commands">
+                <button id="open" onclick="openLetter()">Open</button>
+                <button id="close" onclick="closeLetter()">Close</button>
+            </div>
+        </section>
     </section>
-    
-    
+
+    <script src="script2.js"></script>
+
 </body>
 </html>
