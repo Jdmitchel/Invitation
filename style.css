@@ -58,8 +58,8 @@ body{
     height: 0;
     z-index: 4;
 }
-/* 
-.flap{
+
+/* .flap{
     border-left: 210px solid transparent;
     border-right: 211px solid transparent;
     border-bottom: 185px solid transparent;
@@ -74,7 +74,7 @@ body{
     border-top: 135px solid transparent;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-} */
+}  */
 
 .letter{
     position: relative;
@@ -231,7 +231,7 @@ body{
     margin: 4px 2px; 
     cursor: pointer; 
     border-radius: 4px;
-    z-index: 5;
+    z-index: 3;
 }
 
 .kidding, .reschedule {
@@ -246,7 +246,7 @@ body{
     margin: 4px 2px; 
     cursor: pointer;
     border-radius: 4px; 
-    z-index: 5;
+    z-index: 3;
 }
 
 img{
