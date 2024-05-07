@@ -49,7 +49,7 @@ body{
     margin: 0 auto;
     top: 160px;
     background-color: #c857f5;
-    box-shadow: 0 2px 26px rgba(24, 19, 19, 0.1);
+    box-shadow: 0 4px 30px rgba(24, 19, 19, 0.2);
 }
 
 .front{
@@ -59,22 +59,22 @@ body{
     z-index: 4;
 }
 
-/* .flap{
+.flap{
     border-left: 210px solid transparent;
     border-right: 211px solid transparent;
-    border-bottom: 185px solid transparent;
-    border-top: 135px solid #3a64fb;
+    border-bottom: 165px solid transparent;
+    border-top: 155px solid #3a64fb;
     transform-origin: top;
 }
 
 .pocket{
     border-left: 210px solid #4fa0f6;
     border-right: 211px solid #4fa0f6;
-    border-bottom: 185px solid rgb(48, 148, 215);
-    border-top: 135px solid transparent;
+    border-bottom: 165px solid rgb(48, 148, 215);
+    border-top: 155px solid transparent;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-}  */
+}  
 
 .letter{
     position: relative;
@@ -95,7 +95,7 @@ body{
     bottom:0;
     left:0;
     right:0;
-    background-image: linear-gradient(180deg, rgba(255,255,255,0) 25%, rgba(215, 227, 239, 0.7) 55%, rgba(215,227,239,1) 100%);
+/*     background-image: linear-gradient(180deg, rgba(255,255,255,0) 25%, rgba(215, 227, 239, 0.7) 55%, rgba(215,227,239,1) 100%); */
 }
 
 .letter-content{
@@ -104,30 +104,45 @@ body{
     width: 80%;
     height: 14%;
     background-color: #eeeff0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.open .flap{
+.open.flap{
     transform: rotate(180deg);
     transition: transform 0.5s ease, z-index 0.5s ease;
-    z-index: 3;
+    z-index: 1;
 }
 
-.close .flap{
+.close.flap{
     transform: rotate(0deg);
     transition: transform 0.5s ease, z-index 0.5s ease;
     z-index: 4;
 }
 
-.close .letter{
-    transform: translateY(0px);
+.open.letter{
+    transform: translateY(-60px);
     transition: transform 0.4s 0.6s ease, z-index 1s;
     z-index: 1;
 }
 
-.open .letter{
+.close.letter{
+    transform: translateY(0px);
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 4;
+}
+
+.open.pocket{
     transform: translateY(-60px);
-    transition: transform 0.4s 0.6s ease, z-index 0.6s;
-    z-index: 2;
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 1;
+}
+
+.close.pocket{
+    transform: translateY(0px);
+    transition: transform 0.4s 0.6s ease, z-index 1s;
+    z-index: 4;
 }
 
 .seal{
@@ -151,19 +166,32 @@ body{
     font-weight: bold;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     z-index: 5;
-    cursor: pointer;
     transition: all 0.3s linear;
     border-radius: 40px;
 }
 
-.seal.embossed {
+.seal.remove{
+    display: none;
+}
+
+
+.seal.embossed{
     display: block;
     width: 80%;
     height: 80%;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 60%;
+    left: 60%;
     background-image: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.2) 100%);
+}
+
+.fa{
+    font-size: 2.5rem;
+    color: #f1dede;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .letter-content {
@@ -201,8 +229,8 @@ body{
     margin: 5px;
     line-height: 1em;
     cursor: pointer;
-    -webkit-appearance: none;
-    min-width: 120px;
+/*     -webkit-appearance: none;
+ */    min-width: 120px;
 }
 
 .commands button:hover{
@@ -235,6 +263,7 @@ body{
 }
 
 .kidding, .reschedule {
+    position: relative;
     background-color: #f18c8c;
     color: rgb(0, 0, 0); 
     border: none; 
@@ -247,6 +276,7 @@ body{
     cursor: pointer;
     border-radius: 4px; 
     z-index: 3;
+    
 }
 
 img{
@@ -254,5 +284,6 @@ img{
     height: 100px;
     margin: 0 auto;
     display: block;
+    border-radius: 20px;
 }
 
